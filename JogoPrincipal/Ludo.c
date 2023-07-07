@@ -439,8 +439,7 @@ int main(){
                         if(jg1>0&&jg1<5){
                             printf("O dado esta girando!\n");
                             sleep(1);
-                            //dado=rand()%3+4;
-                            dado=6;
+                            dado=rand()%3+4;
                             Cordado(tabdado,dado); //MOSTRA O DADO
                             printf("\n");
                             movim=0;
@@ -451,7 +450,6 @@ int main(){
                             seis.amarelo=0;
                             printf("Turno do Verde!\nPECAS:ABCD\nTORRES:QRSTUV\n");
                             if(dado==6){
-                                printf("%d SEIS VERDE\n",seis.verde);
                                 seis.verde++;
                                 imprimirTabuleiro(tabuleiro);
                                 printf("\n");
