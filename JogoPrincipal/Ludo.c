@@ -1090,7 +1090,6 @@ void movimento(char tabuleiro[][15],char *boneco,int dado,int *jg1,int *mov,int 
         if(*jg1==1){
             if ((*li != 1 || *co != 1) && (*li != 2 || *co != 2) && (*li != 3 || *co != 3) && (*li != 4 || *co != 4)) { // não está na casa de início
                 while(*mov!=dado&&*mov<dado){
-                    printf("Li=%d co=%d",*li,*co);
                     if(*co==0&&*li==8){  //condiçoes de subir
                         movimentocima(tabuleiro,boneco,dado,li,co,mov,jg1,novotabuleiro,liant,coant,torre,numjog);
                     }
@@ -1143,7 +1142,6 @@ void movimento(char tabuleiro[][15],char *boneco,int dado,int *jg1,int *mov,int 
         if(*jg1==2){
             if ((*li!=1||*co!=10)&&(*li!=2||*co!=11)&&(*li!=3||*co!=12)&&(*li!=4||*co!=13)) {
                 while(*mov!=dado&&*mov<dado){
-                    printf("Li=%d co=%d",*li,*co);
                     if((*co==0&&*li==8)||(*co==0&&*li==7)){  //condiçoes de subir
                         movimentocima(tabuleiro,boneco,dado,li,co,mov,jg1,novotabuleiro,liant,coant,torre,numjog);
                     }
@@ -1504,7 +1502,6 @@ void movimentobaixo(char tabuleiro[][15], char *boneco,int dado,int *li,int *co,
     }
     if(*co==8){
         if(*li==0||*li==1||*li==2||*li==3||*li==4||*li==5||*li==9||*li==10||*li==11||*li==12||*li==13){
-            printf("entrou no if final3\n");
             while ((*mov != dado && *mov < dado && *li >= 0 && *li < 5) || (*mov != dado && *mov < dado && *li >= 8 && *li < 14)){
                 *li=-1;
                 *co=-1;
