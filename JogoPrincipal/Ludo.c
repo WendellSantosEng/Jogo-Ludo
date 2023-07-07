@@ -439,7 +439,7 @@ int main(){
                         if(jg1>0&&jg1<5){
                             printf("O dado esta girando!\n");
                             sleep(1);
-                            dado=rand()%3+4;
+                            dado=rand()%6+1;
                             Cordado(tabdado,dado); //MOSTRA O DADO
                             printf("\n");
                             movim=0;
